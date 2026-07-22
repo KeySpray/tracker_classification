@@ -54,6 +54,7 @@ taxaFields = [
     "Subforms",
     "Mutatio",
     "Label",
+    "AphiaID",
 ]
 
 
