@@ -90,7 +90,7 @@ def _parse_tree_children(children, data):
         data[child['rank']] = child['name']
     
     data["Label"] = child['name']
-    data["AphiaID"] = child.get('aphiaId', '')
+    data["AphiaID"] = str(child['aphiaId']) if child.get('aphiaId') else ''
     data["LabelRank"] = child.get('rank', 'Label') if child.get('rank') else 'Label'
     
     # Handle alternate names (common names)
